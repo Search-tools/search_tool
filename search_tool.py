@@ -365,16 +365,23 @@ if st.session_state.launch_urls:
     )
 
     
+    
     js_lines = []
     for idx, url in enumerate(st.session_state.launch_urls):
         safe_url = url.replace('"', '\\"')
         js_lines.append(f'''
             setTimeout(function() {{
-                window.open("{safe_url}", "_blank");
-            }}, {idx * 250});
+                var a = document.createElement("a");
+                a.href = "{safe_url}";
+                a.target = "_blank";
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            }}, {idx * 600});
         ''')
     
     js_code = "".join(js_lines)
+
     
 
 
