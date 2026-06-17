@@ -74,13 +74,15 @@ st.markdown(
         font-size: 0.95rem;
         margin-bottom: 0.2rem;
     }
+    
     .divider-box {
-        background: #101923;
-        border: 1px solid #334155;
-        border-radius: 999px;
-        height: 32px;
-        margin: 0.95rem 0 0.75rem 0;
+        height: 1px;
+        background: #2a3442;
+        border: none;
+        margin: 1.2rem 0;
+        width: 100%;
     }
+
     .note {
         margin-top: 0.8rem;
         color: #d6deea;
