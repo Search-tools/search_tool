@@ -364,11 +364,19 @@ if st.session_state.launch_urls:
         unsafe_allow_html=True,
     )
 
+    
     js_lines = []
     for idx, url in enumerate(st.session_state.launch_urls):
         safe_url = url.replace('"', '\\"')
-        js_lines.append(f'window.open("{safe_url}", "osint_tab_{idx}_{count}");')
+        js_lines.append(f'''
+            setTimeout(function() {{
+                window.open("{safe_url}", "_blank");
+            }}, {idx * 250});
+        ''')
+    
     js_code = "".join(js_lines)
+    ``
+
 
     launcher_html = f"""
     <button
