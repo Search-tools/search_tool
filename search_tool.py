@@ -375,7 +375,7 @@ if st.session_state.launch_urls:
         ''')
     
     js_code = "".join(js_lines)
-    ``
+    
 
 
     launcher_html = f"""
