@@ -409,7 +409,7 @@ if st.session_state.launch_urls:
             cursor:pointer;
         "
     >
-        🔎 Open All Searches
+        🔎 Open Web Pages
     </button>
     """
     components.html(launcher_html, height=65)
