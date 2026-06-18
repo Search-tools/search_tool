@@ -274,7 +274,7 @@ cat_platform, selected_platform = render_section(
     title="Platform Searches",
     description="Searches the platform for uses of the search word",
     queries=DISPLAY_TEMPLATES["platform"],
-    search_term=search_term
+    search_term=search_term,
     icon="📁",
 )
 
@@ -285,7 +285,7 @@ cat_documents, selected_documents = render_section(
     title="Document Searches",
     description="Searches for instances of the search word in PDFs and Excel files online",
     queries=DISPLAY_TEMPLATES["documents"],
-    search_term=search_term
+    search_term=search_term,
     icon="📄",
 )
 
@@ -296,7 +296,7 @@ cat_leak, selected_leak = render_section(
     title="Recent Leak Searches",
     description='Searches for the search word and the words "leak" or "unreleased" in the last 7 days',
     queries=DISPLAY_TEMPLATES["leak"],
-    search_term=search_term
+    search_term=search_term,
     icon="⚠️",
 )
 
