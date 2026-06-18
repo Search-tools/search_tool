@@ -70,7 +70,7 @@ st.markdown(
         padding: 0.72rem 0.85rem;
         color: #edf5ff;
         font-family: Consolas, Monaco, monospace;
-        font-size: 2rem;
+        font-size: 1rem;
         margin-bottom: 0.2rem;
     }
     
