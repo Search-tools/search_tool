@@ -143,11 +143,12 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-search_term = st.text_input("Search term", placeholder="Enter search term…")
+
 st.markdown(
-    '<div class="helper">Type a name, project, phrase, or keyword set. The tool will build Google searches around it.</div>',
+    '<p class="helper">Type a name, project, phrase, or keyword set. The tool will build Google searches around it.</p>',
     unsafe_allow_html=True,
 )
+
 
 # -------------------------
 # Query templates
