@@ -60,7 +60,7 @@ st.markdown(
     .section-desc {
         color: #d7e1ee;
         font-style: italic;
-        font-size: 2rem;
+        font-size: 1rem;
         margin-bottom: 0.8rem;
     }
     .query-box {
@@ -78,7 +78,7 @@ st.markdown(
         margin-top: 0.8rem;
         color: #d6deea;
         font-style: italic;
-        font-size: 0.95rem;
+        font-size: 2rem;
     }
     .launch-card {
         background: #0a1220;
