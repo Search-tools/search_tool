@@ -232,7 +232,7 @@ def render_copy_button(query_text: str, widget_id: str):
 # -------------------------
 # Section renderer
 # -------------------------
-def render_section(section_key: str, title: str, description: str, queries, icon: str):
+def render_section(section_key: str, title: str, description: str, queries, icon: str, search_term):
     st.markdown('<div class="section-card">', unsafe_allow_html=True)
     category_enabled = st.checkbox(f"{icon} {title}", value=True, key=f"cat_{section_key}")
     st.markdown(f'<div class="section-desc"><em>{description}</em></div>', unsafe_allow_html=True)
