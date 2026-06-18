@@ -51,7 +51,7 @@ st.markdown(
         margin-bottom: 1rem;
     }
     .section-card {
-        background: #0a1220;
+        background: #1d4ed8;
         border: 1px solid #22344f;
         border-radius: 14px;
         padding: 1rem;
@@ -101,7 +101,7 @@ st.markdown(
         background: #1d4ed8;
         color: white;
         border: 1px solid #2563eb;
-        border-radius: 1px;
+        border-radius: 10px;
         padding: 0.65rem 1rem;
         font-weight: 650;
     }
