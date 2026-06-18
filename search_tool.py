@@ -232,7 +232,7 @@ def render_copy_button(query_text: str, widget_id: str):
 # -------------------------
 # Section renderer
 # -------------------------
-def render_section(section_key: str, title: str, description: str, queries, icon: str, search_term):
+def render_section(section_key: str, title: str, description: str, queries, icon: str):
     st.markdown('<div class="section-card">', unsafe_allow_html=True)
     category_enabled = st.checkbox(f"{icon} {title}", value=True, key=f"cat_{section_key}")
     st.markdown(f'<div class="section-desc"><em>{description}</em></div>', unsafe_allow_html=True)
@@ -261,7 +261,7 @@ def render_section(section_key: str, title: str, description: str, queries, icon
         
         with c3:
             cleaned = query_text.replace(" ⏱ Last 7 days", "")
-            final_query = cleaned.replace("*******", search_term)
+            final_query = cleaned.replace("*******", search_term or "name")
             render_copy_button(final_query, f"copy_{section_key}_{idx}")
 
 
@@ -274,7 +274,6 @@ cat_platform, selected_platform = render_section(
     title="Platform Searches",
     description="Searches the platform for uses of the search word",
     queries=DISPLAY_TEMPLATES["platform"],
-    search_term=search_term,
     icon="📁"
 )
 
@@ -285,7 +284,6 @@ cat_documents, selected_documents = render_section(
     title="Document Searches",
     description="Searches for instances of the search word in PDFs and Excel files online",
     queries=DISPLAY_TEMPLATES["documents"],
-    search_term=search_term,
     icon="📄"
 )
 
@@ -296,7 +294,6 @@ cat_leak, selected_leak = render_section(
     title="Recent Leak Searches",
     description='Searches for the search word and the words "leak" or "unreleased" in the last 7 days',
     queries=DISPLAY_TEMPLATES["leak"],
-    search_term=search_term,
     icon="⚠️"
 )
 
