@@ -144,10 +144,12 @@ st.markdown(
 )
 
 
+
 st.markdown(
-    '<p class="helper">Type a name, project, phrase, or keyword set. The tool will build Google searches around it.</p>',
+    '<div class="helper">Type a name, project, phrase, or keyword set. The tool will build Google searches around it.</div>',
     unsafe_allow_html=True,
 )
+
 
 
 # -------------------------
