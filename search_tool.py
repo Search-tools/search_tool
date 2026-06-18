@@ -154,20 +154,20 @@ st.markdown(
 # -------------------------
 DISPLAY_TEMPLATES = {
     "platform": [
-        'site:reddit.com " + search_term + "',
-        'site:github.com " + search_term + "',
-        'site:replit.com " + search_term + "',
-        'site:x.com " + search_term + "',
-        'site:facebook.com " + search_term + "',
-        'site:instagram.com " + search_term + "',
+        'site:reddit.com "*******"',
+        'site:github.com "*******"',
+        'site:replit.com "*******"',
+        'site:x.com "*******"',
+        'site:facebook.com "*******"',
+        'site:instagram.com "*******"',
     ],
     "documents": [
-        'filetype:pdf "name"',
-        'filetype:xls "name"',
-        'filetype:xlsx "name"',
+        'filetype:pdf "*******"',
+        'filetype:xls "*******"',
+        'filetype:xlsx "*******"',
     ],
     "leak": [
-        '" + search_term + " AND ("leak" OR "unreleased") ⏱ Last 7 days',
+        '"*******" AND ("leak" OR "unreleased") ⏱ Last 7 days',
     ],
 }
 
@@ -246,9 +246,14 @@ def render_section(section_key: str, title: str, description: str, queries, icon
             )
             row_selected.append(checked)
         with c2:
+            
+            display_text = query_text.replace("*******", search_term or "name")
+            
             st.markdown(
-                f'<div class="query-box">{html.escape(query_text)}</div>',
+                f'<div class="query-box">{html.escape(display_text)}</div>',
                 unsafe_allow_html=True,
+            )
+
             )
         with c3:
             cleaned = query_text.replace(" ⏱ Last 7 days", "")
