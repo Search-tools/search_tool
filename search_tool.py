@@ -81,10 +81,10 @@ st.markdown(
         font-size: 1rem;
     }
     .launch-card {
-        background: #0a1220;
+        background: #1d4ed8;
         border: 1px solid #1d4ed8;
         border-radius: 14px;
-        padding: 1rem;
+        padding: 0.5rem;
         margin-top: 1rem;
     }
     .launch-title {
