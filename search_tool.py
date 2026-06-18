@@ -46,7 +46,7 @@ st.markdown(
     }
     .helper {
         color: #d3ddea;
-        font-size: 2rem;
+        font-size: 1rem;
         margin-top: 0.35rem;
         margin-bottom: 1rem;
     }
@@ -60,7 +60,7 @@ st.markdown(
     .section-desc {
         color: #d7e1ee;
         font-style: italic;
-        font-size: 0.95rem;
+        font-size: 2rem;
         margin-bottom: 0.8rem;
     }
     .query-box {
