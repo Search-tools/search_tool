@@ -53,7 +53,7 @@ st.markdown(
     .section-card {
         background: #1d4ed8;
         border: 1px solid #22344f;
-        border-radius: 14px;
+        border-radius: 4px;
         padding: 1rem;
         margin-bottom: 1rem;
     }
