@@ -154,12 +154,12 @@ st.markdown(
 # -------------------------
 DISPLAY_TEMPLATES = {
     "platform": [
-        'site:reddit.com "name"',
-        'site:github.com "name"',
-        'site:replit.com "name"',
-        'site:twitter.com "name"',
-        'site:facebook.com "name"',
-        'site:instagram.com "name"',
+        'site:reddit.com " + search_term + "',
+        'site:github.com " + search_term + "',
+        'site:replit.com " + search_term + "',
+        'site:x.com " + search_term + "',
+        'site:facebook.com " + search_term + "',
+        'site:instagram.com " + search_term + "',
     ],
     "documents": [
         'filetype:pdf "name"',
@@ -167,7 +167,7 @@ DISPLAY_TEMPLATES = {
         'filetype:xlsx "name"',
     ],
     "leak": [
-        '"name" AND ("leak" OR "unreleased") ⏱ Last 7 days',
+        '" + search_term + " AND ("leak" OR "unreleased") ⏱ Last 7 days',
     ],
 }
 
@@ -178,7 +178,7 @@ def actual_queries(term: str):
             (f'site:reddit.com "{term}"', False),
             (f'site:github.com "{term}"', False),
             (f'site:replit.com "{term}"', False),
-            (f'site:twitter.com "{term}"', False),
+            (f'site:x.com "{term}"', False),
             (f'site:facebook.com "{term}"', False),
             (f'site:instagram.com "{term}"', False),
         ],
