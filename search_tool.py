@@ -40,7 +40,7 @@ st.markdown(
     }
     .subtitle {
         color: #d7e1ee;
-        font-size: 2rem;
+        font-size: 1rem;
         font-style: italic;
         margin-bottom: 1.4rem;
     }
@@ -74,14 +74,6 @@ st.markdown(
         margin-bottom: 0.2rem;
     }
     
-    .divider-box {
-        height: 1px;
-        background: #2a3442;
-        border: none;
-        margin: 1.2rem 0;
-        width: 100%;
-    }
-
     .note {
         margin-top: 0.8rem;
         color: #d6deea;
