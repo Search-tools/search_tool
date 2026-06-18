@@ -284,8 +284,6 @@ cat_documents, selected_documents = render_section(
     icon="📄",
 )
 
-st.markdown('<div class="divider-box"></div>', unsafe_allow_html=True)
-
 cat_leak, selected_leak = render_section(
     section_key="leak",
     title="Recent Leak Searches",
