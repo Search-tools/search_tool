@@ -46,7 +46,7 @@ st.markdown(
     }
     .helper {
         color: #d3ddea;
-        font-size: 0.96rem;
+        font-size: 2rem;
         margin-top: 0.35rem;
         margin-bottom: 1rem;
     }
