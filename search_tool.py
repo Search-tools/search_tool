@@ -3,7 +3,7 @@ import urllib.parse
 import html
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="OSINT Search Launcher", page_icon="🔎", layout="wide")
+st.set_page_config(page_title="Leak Investigation Search Launcher", page_icon="🔎", layout="wide")
 
 # -------------------------
 # Session state
@@ -136,7 +136,7 @@ st.markdown(
 # -------------------------
 # Header
 # -------------------------
-st.markdown('<div class="main-title">🔎 OSINT Search Launcher</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">🔎 Leak Investigation Search Launcher</div>', unsafe_allow_html=True)
 st.markdown(
     '<div class="subtitle"><em>Build and launch targeted search queries instantly</em></div>',
     unsafe_allow_html=True,
@@ -144,7 +144,7 @@ st.markdown(
 
 search_term = st.text_input("Search term", placeholder="Enter search term…")
 st.markdown(
-    '<div class="helper">Type a name, project, phrase, or keyword set. The tool will build Google searches around it.</div>',
+    '<div class="helper">Type a username, track, artist, or keyword. The tool will build Google searches around it.</div>',
     unsafe_allow_html=True,
 )
 
