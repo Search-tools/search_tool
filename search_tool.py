@@ -261,7 +261,7 @@ def render_section(section_key: str, title: str, description: str, queries, icon
         
         with c3:
             cleaned = query_text.replace(" ⏱ Last 7 days", "")
-            final_query = cleaned.replace("*******", search_term or "name")
+            final_query = cleaned.replace("*******", "name")
             render_copy_button(final_query, f"copy_{section_key}_{idx}")
 
 
