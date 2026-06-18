@@ -70,7 +70,7 @@ st.markdown(
         padding: 0.72rem 0.85rem;
         color: #edf5ff;
         font-family: Consolas, Monaco, monospace;
-        font-size: 0.95rem;
+        font-size: 2rem;
         margin-bottom: 0.2rem;
     }
     
@@ -78,7 +78,7 @@ st.markdown(
         margin-top: 0.8rem;
         color: #d6deea;
         font-style: italic;
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .launch-card {
         background: #0a1220;
