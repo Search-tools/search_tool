@@ -250,7 +250,7 @@ def render_section(section_key: str, title: str, description: str, queries, icon
             row_selected.append(checked)
         with c2:
             
-            display_text = query_text.replace("*******", search_term or "name")
+            display_text = query_text.replace("*******", or "name")
             
             st.markdown(
                 f'<div class="query-box">{html.escape(display_text)}</div>',
