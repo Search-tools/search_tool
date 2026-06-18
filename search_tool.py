@@ -40,7 +40,7 @@ st.markdown(
     }
     .subtitle {
         color: #d7e1ee;
-        font-size: 1rem;
+        font-size: 2rem;
         font-style: italic;
         margin-bottom: 1.4rem;
     }
@@ -273,8 +273,6 @@ cat_platform, selected_platform = render_section(
     queries=DISPLAY_TEMPLATES["platform"],
     icon="📁",
 )
-
-st.markdown('<div class="divider-box"></div>', unsafe_allow_html=True)
 
 cat_documents, selected_documents = render_section(
     section_key="documents",
