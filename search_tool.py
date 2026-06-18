@@ -275,7 +275,7 @@ cat_platform, selected_platform = render_section(
     description="Searches the platform for uses of the search word",
     queries=DISPLAY_TEMPLATES["platform"],
     search_term=search_term,
-    icon="📁",
+    icon="📁"
 )
 
 st.markdown('<div class="divider-box"></div>', unsafe_allow_html=True)
@@ -286,7 +286,7 @@ cat_documents, selected_documents = render_section(
     description="Searches for instances of the search word in PDFs and Excel files online",
     queries=DISPLAY_TEMPLATES["documents"],
     search_term=search_term,
-    icon="📄",
+    icon="📄"
 )
 
 st.markdown('<div class="divider-box"></div>', unsafe_allow_html=True)
@@ -297,7 +297,7 @@ cat_leak, selected_leak = render_section(
     description='Searches for the search word and the words "leak" or "unreleased" in the last 7 days',
     queries=DISPLAY_TEMPLATES["leak"],
     search_term=search_term,
-    icon="⚠️",
+    icon="⚠️"
 )
 
 
