@@ -254,7 +254,7 @@ def render_section(section_key: str, title: str, description: str, queries, icon
                 unsafe_allow_html=True,
             )
 
-            )
+            
         with c3:
             cleaned = query_text.replace(" ⏱ Last 7 days", "")
             render_copy_button(cleaned, f"copy_{section_key}_{idx}")
